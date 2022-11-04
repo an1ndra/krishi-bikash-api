@@ -1,0 +1,4 @@
+FROM openjdk:11
+EXPOSE 8080
+ADD target/krishi-bikash-api.jar krishi-bikash-api.jar
+ENTRYPOINT ["java","jar","/krishi-bikash-api.jar"]
